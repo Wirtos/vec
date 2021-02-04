@@ -52,7 +52,7 @@
 
 #define vec_insert(v, idx, val)\
   ( vec_insert_(vec_unpack_(v), idx) ? -1 :\
-    ((v)->data[idx] = (val), 0), (v)->length++, 0 )
+    ((v)->data[idx] = (val), (v)->length++, 0) )
     
 
 #define vec_sort(v, fn)\
